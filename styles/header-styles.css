@@ -1,0 +1,92 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #0f0c1b;
+  --bg-secondary: #18132a;
+  --bg-tertiary: #231b3e;
+
+  /* Text & Typography Colors */
+  --text-primary: #f3f0ff;
+  --text-secondary: #b3a8d4;
+  --text-muted: #7e73a3;
+
+  /* Brand & Accent Colors */
+  --accent-primary: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --accent-cyan: #06b6d4;
+
+  /* Borders & Dividers */
+  --border-color: #2e2452;
+  --border-focus: #a78bfa;
+
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+header {
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.header-logo-container img {
+  height: 120px;
+}
+
+.header-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+}
+
+.header-title h2,
+h4 {
+  margin: 0;
+}
+
+nav {
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.link-container ul {
+  background-color: var(--bg-secondary);
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  padding: 20px 0px;
+  border-radius: 50px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.link-container li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  padding: 20px 30px;
+}
+
+.home:hover,
+.video:hover,
+.showcase:hover,
+.register:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.active {
+  background-color: var(--border-color);
+}
