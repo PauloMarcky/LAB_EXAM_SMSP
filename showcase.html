@@ -38,14 +38,23 @@
       </div>
     </div>
 
-    <nav class="link-container">
+    <button class="hamburger-btn" id="menuToggle" aria-label="Toggle navigation menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="link-container" id="sidebarMenu">
+      <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
       <ul>
         <li><a class="home" href="index.html">Home</a></li>
-        <li><a class="showcase active" style="pointer-events: none;" href="#showcase">Showcase</a></li>
+        <li><a class="showcase active" style="pointer-events: none;" href="showcase.html">Showcase</a></li>
         <li><a class="video" href="video.html">Watch Video</a></li>
-        <li><a class="register" href="contact.html">Contact Us</a></li>
+        <li><a class="contact" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
+
+    <div class="sidebar-overlay" id="menuOverlay"></div>
   </header>
   <main class="showcase-main">
     <section class="showcase-header">
