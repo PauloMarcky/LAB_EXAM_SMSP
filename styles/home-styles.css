@@ -31,7 +31,7 @@ main {
 }
 
 .hero-content {
-  background-color: var(--border-color);
+  background-color: var(--bg-secondary);
   padding: 30px;
   box-sizing: border-box;
   border-radius: 20px;

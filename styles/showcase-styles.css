@@ -35,7 +35,7 @@
 .showcase-header {
   text-align: center;
   margin-bottom: 40px;
-  background-color: var(--border-color);
+  background-color: var(--bg-secondary);
   padding: 10px;
   border-radius: 15px;
 }
