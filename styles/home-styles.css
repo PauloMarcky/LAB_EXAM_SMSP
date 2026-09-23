@@ -1,0 +1,86 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #0f0c1b;
+  --bg-secondary: #18132a;
+  --bg-tertiary: #231b3e;
+
+  /* Text & Typography Colors */
+  --text-primary: #f3f0ff;
+  --text-secondary: #b3a8d4;
+  --text-muted: #7e73a3;
+
+  /* Brand & Accent Colors */
+  --accent-primary: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --accent-cyan: #06b6d4;
+
+  /* Borders & Dividers */
+  --border-color: #2e2452;
+  --border-focus: #a78bfa;
+
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+main {
+  margin: 0 auto;
+  width: 80vw;
+  height: auto;
+  padding-top: 150px;
+}
+
+.hero-content {
+  background-color: var(--border-color);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--border-focus);
+}
+
+.hero-text p {
+  font-size: 23px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+}
+
+.hero-button {
+  margin: 40px 0px 10px 0px;
+}
+
+.hero-button a {
+  text-decoration: none;
+  padding: 15px 50px;
+  background-color: var(--success);
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--bg-primary);
+}
+
+.persuasion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 50px;
+}
+
+.persuasion-message-box p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+  font-size: 20px;
+  text-align: center;
+}
+
+.uls-link a {
+  color: var(--success);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

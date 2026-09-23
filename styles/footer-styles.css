@@ -1,0 +1,63 @@
+:root {
+  /* Background Colors */
+  --bg-primary: #0f0c1b;
+  --bg-secondary: #18132a;
+  --bg-tertiary: #231b3e;
+
+  /* Text & Typography Colors */
+  --text-primary: #f3f0ff;
+  --text-secondary: #b3a8d4;
+  --text-muted: #7e73a3;
+
+  /* Brand & Accent Colors */
+  --accent-primary: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --accent-cyan: #06b6d4;
+
+  /* Borders & Dividers */
+  --border-color: #2e2452;
+  --border-focus: #a78bfa;
+
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.signature,
+.external-links {
+  margin: 0px 20px;
+}
+
+.external-links a {
+  margin: 0px 10px;
+}
+
+.download {
+  padding: 10px 20px;
+  background-color: var(--success);
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--bg-primary);
+}
+
+.uls-link {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.signature h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-primary);
+}
