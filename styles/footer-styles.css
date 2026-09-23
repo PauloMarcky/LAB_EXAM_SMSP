@@ -23,22 +23,36 @@
   --warning: #f59e0b;
 }
 
+/* Base Footer Styles (Desktop) */
 footer {
   width: 100%;
   background-color: var(--bg-secondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .signature,
 .external-links {
-  margin: 0px 20px;
+  margin: 0 20px;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .external-links a {
-  margin: 0px 10px;
+  margin: 0;
+  transition: opacity 0.2s ease;
+}
+
+.external-links a:hover {
+  opacity: 0.85;
 }
 
 .download {
@@ -50,14 +64,53 @@ footer {
   font-size: 13px;
   font-weight: bold;
   color: var(--bg-primary);
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .uls-link {
   text-decoration: none;
   color: var(--text-secondary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
 }
 
 .signature h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-primary);
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE VIEW (<= 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 15px;
+    gap: 18px;
+  }
+
+  .signature,
+  .external-links {
+    margin: 0;
+  }
+
+  .external-links {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .signature h3 {
+    font-size: 0.95rem;
+  }
+
+  .download {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
 }

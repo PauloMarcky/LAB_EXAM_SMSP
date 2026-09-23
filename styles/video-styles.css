@@ -1,11 +1,3 @@
-main {
-  margin: 0 auto;
-  max-width: 80vw;
-  min-height: 100vh;
-  padding-top: 150px;
-  padding-bottom: 60px;
-}
-
 :root {
   /* Background Colors */
   --bg-primary: #0f0c1b;
@@ -24,6 +16,17 @@ main {
   --border-focus: #a78bfa;
 }
 
+main {
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 1100px;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+/* Header & Intro Badge */
 .video-header {
   margin-bottom: 30px;
   background-color: var(--bg-secondary);
@@ -32,6 +35,7 @@ main {
   border-radius: 15px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 .badge {
@@ -43,7 +47,8 @@ main {
   padding: 6px 14px;
   border-radius: 20px;
   border: 1px solid var(--border-color);
-  margin-top: 30px;
+  margin-bottom: 12px;
+  /* Fixed space above h1 instead of large top margin */
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
@@ -53,6 +58,7 @@ main {
   color: var(--border-focus);
   margin-bottom: 12px;
   margin-top: 0;
+  line-height: 1.25;
 }
 
 .video-subtitle {
@@ -63,6 +69,7 @@ main {
   line-height: 1.6;
 }
 
+/* Video Container & Responsive Player */
 .video-container {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -71,6 +78,7 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .video-container:hover {
@@ -80,12 +88,15 @@ main {
 
 .video-container video {
   width: 100%;
-  max-height: 500px;
-  min-height: 500px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  /* Fluid widescreen aspect ratio */
+  max-height: 600px;
   display: block;
   border-radius: 8px;
   background-color: #000;
   outline: none;
+  object-fit: contain;
 }
 
 /* Explanation & Highlights Section */
@@ -95,6 +106,7 @@ main {
   border-radius: 15px;
   padding: 30px;
   color: var(--text-primary);
+  box-sizing: border-box;
 }
 
 .details-card h2 {
@@ -126,6 +138,7 @@ main {
   border-radius: 10px;
   padding: 20px;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .highlight-item h3 {
@@ -144,21 +157,58 @@ main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Tablets & Medium Screens (<= 992px) */
+@media (max-width: 992px) {
+  main {
+    width: 90vw;
+    padding-top: 130px;
+  }
+
+  .video-details {
+    padding: 25px;
+  }
+}
+
+/* Mobile Devices (<= 600px) */
 @media (max-width: 600px) {
   main {
     width: 92vw;
     padding-top: 130px;
+    padding-bottom: 40px;
+  }
+
+  .video-header {
+    padding: 20px 15px;
+    margin-bottom: 20px;
   }
 
   .video-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .video-subtitle {
     font-size: 0.95rem;
   }
 
+  .video-container {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
   .video-details {
-    padding: 20px;
+    padding: 20px 16px;
+  }
+
+  .details-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
