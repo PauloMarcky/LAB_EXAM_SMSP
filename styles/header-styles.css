@@ -23,7 +23,6 @@
   --warning: #f59e0b;
 }
 
-/* Base Header */
 header {
   background-color: var(--bg-primary);
   display: flex;
@@ -85,6 +84,7 @@ nav {
 .link-container li {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
   font-size: 15px;
+  text-align: center;
 }
 
 .link-container a {
@@ -106,16 +106,12 @@ nav {
   background-color: var(--border-color);
 }
 
-/* Hide Mobile Elements on Desktop */
 .hamburger-btn,
 .close-btn,
 .sidebar-overlay {
   display: none;
 }
 
-/* ==========================================
-   MOBILE & TABLET VIEWPORT (<= 850px)
-   ========================================== */
 @media (max-width: 850px) {
   header {
     justify-content: space-between;

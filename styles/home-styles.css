@@ -96,6 +96,7 @@ main {
   text-align: center;
   line-height: 1.6;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .uls-link a {
@@ -103,6 +104,7 @@ main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: underline;
   transition: opacity 0.2s ease;
+  margin-top: 10px;
 }
 
 .uls-link a:hover {

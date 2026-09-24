@@ -19,6 +19,13 @@
     html {
       margin: 0;
       padding: 0;
+
+
+    }
+
+    body::-webkit-scrollbar,
+    body::-webkit-scrollbar-button {
+      display: none;
     }
   </style>
 </head>
@@ -68,7 +75,7 @@
     </section>
 
     <section class="video-container">
-      <video controls poster="assets/optimized/video-thumbnail.webp" preload="metadata">
+      <video controls>
         <source src="assets/video/CIT_PROMOTIONAL_VIDEO.mp4" type="video/mp4">
         Your browser does not support the video tag. Please upgrade your browser.
       </video>
